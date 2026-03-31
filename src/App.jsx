@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Banner from "./Components/Navbar/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
 import WorkFlow from "./Components/WorkFlow/WorkFlow";
+import TransparentPrice from "./Components/Transparent pricing/TransparentPrice";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,10 +18,18 @@ function App() {
       <main>
         {/* {HeroBanner Section} */}
         {/* <Banner></Banner> */}
-        <div className="bg-linear-to-r from-[#4f39f6] to-[#9514fa]">
+
+        {/* {Transparent Price section} */}
+        <section className="bg-[#f9fafc]">
+          <TransparentPrice></TransparentPrice>
+        </section>
+
+        {/* {WorkFlow} */}
+        <section className="bg-linear-to-r from-[#4f39f6] to-[#9514fa] ">
           <WorkFlow></WorkFlow>
-        </div>
+        </section>
       </main>
+      {/* {Footer} */}
       <footer className="bg-[#101727] ">
         <Footer></Footer>
       </footer>
