@@ -27,7 +27,10 @@ function App() {
       </nav>
       <main>
         {/* {HeroBanner Section} */}
-        {/* <Banner></Banner> */}
+
+        <section className="py-10">
+          <Banner></Banner>
+        </section>
 
         {/* {Stats section} */}
 

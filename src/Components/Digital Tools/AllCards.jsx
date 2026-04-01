@@ -1,7 +1,7 @@
 import React from "react";
 
 const AllCards = ({ singleData }) => {
-  const { name, description, price, period, tagType } = singleData;
+  const { name, description, price, period, tagType, features } = singleData;
   return (
     <div className="">
       {/* {cards section} */}
