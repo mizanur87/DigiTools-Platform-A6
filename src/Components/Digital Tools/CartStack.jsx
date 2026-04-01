@@ -9,17 +9,17 @@ const CartStack = ({ item, totalPrice, setSelected, selected }) => {
   }
 
   return (
-    <div className=" ">
-      <div className="flex justify-between items-center p-5 bg-purple-100 gap-3 space-y-5 mb-5">
-        <div>
-          <div className="border-2 rounded-full h-13 w-13 border-gray-300 flex justify-center items-center">
+    <div className="card card-dash bg-base-100 container mx-auto border-2 ">
+      <div className="flex justify-between items-center px-10 py-5  bg-[#f9fafc] rounded-xl gap-3 space-y-5 mb-5">
+        <div className="">
+          <div className="border-2 rounded-full h-13 w-13 shadow-xl flex justify-center items-center">
             <img className="w-8 h-8 " src={item.icon} alt="" />
           </div>
           <h2 className="text-3xl font-bold">{item.name}</h2>
           <p>${item.price}</p>
         </div>
         <div>
-          <p onClick={remove} className="text-red-500 btn btn-ghost">
+          <p onClick={remove} className="text-[#ff3980] btn btn-ghost">
             Remove
           </p>
         </div>

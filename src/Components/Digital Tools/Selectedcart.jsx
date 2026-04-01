@@ -6,7 +6,7 @@ import shoppingCart from "../../assets/products/shopping-cart.png";
 const Selectedcart = ({ selected, totalPrice, setSelected }) => {
   return (
     <div>
-      <p>Your Cart</p>
+      <p className="font-bold container mx-auto mb-3">Your Cart</p>
       {selected.length > 0 ? (
         <>
           {selected.map((item) => (
