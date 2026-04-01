@@ -1,8 +1,10 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const CartStack = ({ item, totalPrice, setSelected, selected }) => {
   function remove() {
     const filtered = selected.filter((p) => item.id !== p.id);
+    toast.error("Item Removed");
     setSelected(filtered);
   }
 

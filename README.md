@@ -1,16 +1,17 @@
-# React + Vite
+Digi-Tools: AI Subscription Marketplace
+Overview
+Digi-Tools is a contemporary web application designed as a centralized hub for discovering and purchasing AI tool subscriptions. The platform prioritizes a seamless, interactive user experience, allowing for efficient tool selection and real-time financial tracking of selected services. The project emphasizes a minimalist UI and intuitive navigation.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technical Stack
+React: Core library for building the interactive user interface.
 
-Currently, two official plugins are available:
+Tailwind CSS: Utility-first framework for custom, responsive styling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+DaisyUI: Component library for consistent and polished interface elements.
 
-## React Compiler
+Core Functionality
+Subscription Management: Users can browse a curated list of AI tools and add them to a digital cart via a simulated purchase flow.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Dynamic Cart Control: Provides the flexibility to modify selections by removing specific subscriptions at any time.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Live Cost Tracking: Integrated logic calculates and displays the total subscription expenditure instantly as the cart is updated.
