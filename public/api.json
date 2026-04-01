@@ -1,0 +1,98 @@
+[
+  {
+    "id": "prod_001",
+    "name": "DesignFlow Pro",
+    "description": "A comprehensive UI/UX design suite with real-time collaboration and advanced prototyping tools.",
+    "price": 29.0,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Unlimited projects",
+      "Team collaboration",
+      "Advanced prototyping",
+      "10GB cloud storage"
+    ],
+    "icon": "https://i.postimg.cc/k4k0n72S/writing-2327400-1.png"
+  },
+  {
+    "id": "prod_002",
+    "name": "ResumeGenius AI",
+    "description": "An intelligent resume builder that helps you land your dream job with AI-powered suggestions.",
+    "price": 49.0,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI cover letter generator"
+    ],
+    "icon": "https://i.postimg.cc/k4k0n72G/design-tool.png"
+  },
+  {
+    "id": "prod_003",
+    "name": "CodeGuard Lite",
+    "description": "Automated security scanning for your private repositories to catch vulnerabilities early.",
+    "price": 0.0,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Weekly scans",
+      "Email alerts",
+      "3 public repos",
+      "Basic vulnerability report"
+    ],
+    "icon": "https://i.postimg.cc/76xCKyHH/camera-8775444-1.png"
+  },
+  {
+    "id": "prod_004",
+    "name": "Analytics Vault",
+    "description": "Deep-dive data analytics platform for enterprise-level business intelligence.",
+    "price": 999.0,
+    "period": "yearly",
+    "tag": "Enterprise",
+    "tagType": "popular",
+    "features": [
+      "Custom dashboards",
+      "SQL integration",
+      "Dedicated account manager",
+      "SLA guarantee"
+    ],
+    "icon": "https://i.postimg.cc/k4k0n724/operation.png"
+  },
+  {
+    "id": "prod_005",
+    "name": "SEO Rocket",
+    "description": "Boost your website's search engine ranking with automated keyword tracking and audits.",
+    "price": 15.0,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "new",
+    "features": [
+      "Keyword tracking",
+      "Backlink analysis",
+      "Competitor audits",
+      "Weekly PDF reports"
+    ],
+    "icon": "https://i.postimg.cc/NMW3gQK5/portfolio.png"
+  },
+  {
+    "id": "prod_006",
+    "name": "CloudBackup Max",
+    "description": "Secure, encrypted off-site backup for your personal and professional digital assets.",
+    "price": 120.0,
+    "period": "yearly",
+    "tag": "Top Rated",
+    "tagType": "best-seller",
+    "features": [
+      "2TB storage",
+      "End-to-end encryption",
+      "Multi-device sync",
+      "File versioning"
+    ],
+    "icon": "https://i.postimg.cc/tTLKX9sx/social-media.png"
+  }
+]
