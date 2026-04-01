@@ -8,7 +8,7 @@ const Banner = () => {
       <div className=" flex flex-col justify-center  items-center gap-4 md:flex-row text-left">
         {/* {Text part} */}
 
-        <div className="space-y-3 text-center flex flex-col justify-center items-center md:text-left  ">
+        <div className="space-y-3  flex flex-col justify-start  md:text-left  ">
           <p
             className="max-w-80  rounded-full bg-[#e1e7ffFF] p-2.5 flex items-center justify-start gap-1.5 
             "

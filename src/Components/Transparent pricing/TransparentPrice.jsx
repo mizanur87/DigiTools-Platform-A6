@@ -13,9 +13,9 @@ const TransparentPrice = () => {
         </div>
 
         {/* {card part} */}
-        <div className="grid grid-cols-1 gap-2 justify-center items-center sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-2 justify-center items-center md:grid-cols-3">
           {/* {Card1} */}
-          <div className="card w-90 bg-base-100 shadow-sm ">
+          <div className="card max-w-90 p-10 bg-base-100 shadow-sm ">
             <div className="card-body">
               <div className="">
                 <h2 className="text-3xl font-bold">Starter</h2>
@@ -104,7 +104,7 @@ const TransparentPrice = () => {
 
           {/* {Card2} */}
 
-          <div className="card w-90 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white shadow-sm">
+          <div className="card max-w-90 bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white shadow-sm">
             <div className="card-body ">
               <span className="badge   badge-xs bg-[#fef3c6FF] text-[#bb4d00]">
                 Most Popular
@@ -232,7 +232,7 @@ const TransparentPrice = () => {
 
           {/* {Card3} */}
 
-          <div className="card w-90 bg-base-100 shadow-sm">
+          <div className="card max-w-90 bg-base-100 shadow-sm">
             <div className="card-body">
               <div className="">
                 <h2 className="text-3xl font-bold">Enterprise</h2>

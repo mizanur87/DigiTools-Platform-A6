@@ -35,7 +35,7 @@
     "id": "prod_003",
     "name": "CodeGuard Lite",
     "description": "Automated security scanning for your private repositories to catch vulnerabilities early.",
-    "price": 0.0,
+    "price": 15.0,
     "period": "monthly",
     "tag": "New",
     "tagType": "new",

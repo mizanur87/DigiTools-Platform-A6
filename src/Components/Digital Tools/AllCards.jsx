@@ -1,18 +1,25 @@
 import React from "react";
 
-const AllCards = ({ singleData }) => {
+const AllCards = ({ singleData, choose }) => {
   const { name, description, price, period, tagType, features } = singleData;
   return (
     <div className="">
       {/* {cards section} */}
 
-      <div className="card w-90  shadow-sm ">
+      <div className="card   shadow-sm ">
         <div className="card-body relative ">
           <div className="border-2 rounded-full h-13 w-13 border-gray-300 flex justify-center items-center">
             <img className="w-8 h-8 " src={singleData.icon} alt="" />
           </div>
 
-          <span className="badge  absolute right-2  badge-xs bg-[#fef3c6FF] text-[#bb4d00]">
+          <span
+            className={`
+              ${tagType === "best-seller" ? "badge  absolute right-2  badge-xs bg-[#fef3c6FF] text-[#bb4d00]" : ""}
+              ${tagType === "popular" ? "badge  absolute right-2  badge-xs bg-[#e1e7ff] text-purple-600" : ""}
+              ${tagType === "new" ? "badge  absolute right-2  badge-xs bg-[#dbfce7FF] text-[#0a883eFF]" : ""}
+            
+            `}
+          >
             {tagType}
           </span>
           <div className="">
@@ -127,7 +134,10 @@ const AllCards = ({ singleData }) => {
             </li>
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary w-full  rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white  ">
+            <button
+              onClick={() => choose(singleData)}
+              className="btn btn-primary w-full  rounded-full bg-linear-to-r from-[#4f39f6] to-[#9514fa] text-white  "
+            >
               Buy Now
             </button>
           </div>

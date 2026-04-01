@@ -9,6 +9,9 @@ import TransparentPrice from "./Components/Transparent pricing/TransparentPrice"
 import ThreeSteps from "./Components/3 Steps/ThreeSteps";
 import AllInfos from "./Components/Digital Tools/AllInfos";
 import Stats from "./Stats/Stats";
+import Selectedcart from "./Components/Digital Tools/Selectedcart";
+import Tab from "./Components/Digital Tools/Tab";
+import { toast, ToastContainer } from "react-toastify";
 
 const fetchData = async () => {
   let res = await fetch("/api.json");
@@ -16,9 +19,18 @@ const fetchData = async () => {
 };
 
 function App() {
-  const [count, setCount] = useState(0);
-
   const PromiseData = fetchData();
+
+  const [toggle, setToggle] = useState("available");
+
+  const [selected, setSelected] = useState([]);
+  const totalPrice = selected.reduce((sum, running) => sum + running.price, 0);
+  function choose(obj) {
+    setSelected((prev) => [...prev, obj]);
+
+    toast.success("Added to cart");
+    // console.log(selected);
+  }
 
   return (
     <>
@@ -40,10 +52,24 @@ function App() {
 
         {/* {Digital Tools & card rendering} */}
 
+        <Tab selected={selected} toggle={toggle} setToggle={setToggle}></Tab>
         <section>
-          <Suspense fallback={<p>Loading..</p>}>
-            <AllInfos PromiseData={PromiseData}></AllInfos>
-          </Suspense>
+          {toggle === "available" ? (
+            <Suspense fallback={<p>Loading..</p>}>
+              <AllInfos
+                choose={choose}
+                toggle={toggle}
+                PromiseData={PromiseData}
+                setToggle={setToggle}
+              ></AllInfos>
+            </Suspense>
+          ) : (
+            <Selectedcart
+              setSelected={setSelected}
+              totalPrice={totalPrice}
+              selected={selected}
+            ></Selectedcart>
+          )}
         </section>
 
         {/* {Three Steps} */}
@@ -66,6 +92,8 @@ function App() {
       <footer className="bg-[#101727] ">
         <Footer></Footer>
       </footer>
+
+      <ToastContainer></ToastContainer>
     </>
   );
 }

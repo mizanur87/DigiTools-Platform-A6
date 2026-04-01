@@ -1,43 +1,22 @@
 import React, { use, useState } from "react";
 import AllCards from "./AllCards";
 
-const AllInfos = ({ PromiseData }) => {
-  const [toggle, setToggle] = useState("available");
-
+const AllInfos = ({ PromiseData, choose, toggle, setToggle }) => {
   const fData = use(PromiseData);
+
   //   console.log(fData);
   return (
     <div className="container mx-auto flex flex-col justify-center items-center gap-5 py-[120px]  ">
       {/* {Healines} */}
-      <div className="text-center flex flex-col justify-center items-center gap-5 ">
-        {/* {Text Section} */}
-        <h1 className="font-bold text-5xl ">Premium Digital Tools</h1>
-        <p>
-          Choose from our curated collection of premium digital products
-          designed to boost your productivity and creativity.
-        </p>
 
-        {/* {Button Section} */}
-        <div className="rounded-full text-center bg-white border-2 border-[#f6f6f6] m-w-[20%] space-x-1 p-1.3 flex justify-center items-center">
-          <button
-            onClick={() => setToggle("available")}
-            className={` ${toggle === "available" ? "btn rounded-full text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa]" : "btn rounded-full text-[#25065d]"} `}
-          >
-            Products
-          </button>
-          {/* {text-[#25065d]} */}
-          <button
-            onClick={() => setToggle("selected")}
-            className={` ${toggle === "selected" ? "btn rounded-full text-white bg-linear-to-r from-[#4f39f6] to-[#9514fa]" : "btn rounded-full text-[#25065d]"} `}
-          >
-            card({fData.length})
-          </button>
-        </div>
-      </div>
       {/* {Allcards} */}
-      <div className="grid grid-cols-1  my-4 justify-center items-center md:grid-cols-3">
+      <div className="grid grid-cols-1  my-4 justify-items-center  gap-5 md:grid-cols-3">
         {fData.map((singleData) => (
-          <AllCards key={singleData.id} singleData={singleData}></AllCards>
+          <AllCards
+            key={singleData.id}
+            choose={choose}
+            singleData={singleData}
+          ></AllCards>
         ))}
       </div>
     </div>
