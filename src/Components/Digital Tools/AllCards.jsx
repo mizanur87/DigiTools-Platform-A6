@@ -14,9 +14,9 @@ const AllCards = ({ singleData, choose }) => {
 
           <span
             className={`
-              ${tagType === "best-seller" ? "badge  absolute right-2  badge-xs bg-[#fef3c6FF] text-[#bb4d00]" : ""}
-              ${tagType === "popular" ? "badge  absolute right-2  badge-xs bg-[#e1e7ff] text-purple-600" : ""}
-              ${tagType === "new" ? "badge  absolute right-2  badge-xs bg-[#dbfce7FF] text-[#0a883eFF]" : ""}
+              ${tagType === "best-seller" ? "badge  absolute right-2 rounded-full p-3 badge-xs bg-[#fef3c6FF] text-[#bb4d00]" : ""}
+              ${tagType === "popular" ? "badge  absolute right-2 rounded-full p-4 badge-xs bg-[#e1e7ff] text-purple-600" : ""}
+              ${tagType === "new" ? "badge  absolute right-2 p-4 rounded-full badge-xs bg-[#dbfce7FF] text-[#0a883eFF]" : ""}
             
             `}
           >

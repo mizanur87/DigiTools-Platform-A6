@@ -2,7 +2,7 @@ import React from "react";
 
 const Tab = ({ toggle, setToggle, selected }) => {
   return (
-    <div className="text-center flex flex-col justify-center items-center gap-5 ">
+    <div className="text-center flex flex-col justify-center items-center gap-5 mt-[60px] ">
       {/* {Text Section} */}
       <h1 className="font-bold text-5xl ">Premium Digital Tools</h1>
       <p>
